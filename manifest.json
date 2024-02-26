@@ -1,0 +1,12 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Short Video Blocker",
+  "version": "1.0",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["*://*.youtube.com/*"],
+      "js": ["index.js"]
+    }
+  ]
+}
